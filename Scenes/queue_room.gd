@@ -20,6 +20,7 @@ func generate_queue():
 		var color = colors.pick_random()
 		var item = item_scene.instantiate()
 		item.modulate = color
+		item.queue_room = self # pass a ref
 		queue_container.add_child(item)
 		queue.append(color)
 		
