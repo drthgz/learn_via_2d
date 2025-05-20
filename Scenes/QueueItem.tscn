@@ -6,11 +6,15 @@
 script = ExtResource("1_jievf")
 
 [node name="Button" type="Button" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 3.0
+offset_top = 95.0
+offset_right = 43.0
+offset_bottom = 135.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 76.0
+offset_top = 97.0
+offset_right = 116.0
+offset_bottom = 120.0
 metadata/_edit_use_anchors_ = true

@@ -20,22 +20,26 @@ func generate_queue():
 		var color = colors.pick_random()
 		var item = item_scene.instantiate()
 		item.modulate = color
-		item.queue_room = self # pass a ref
+		item.queue_room = self  # if using Fix 2
 		queue_container.add_child(item)
 		queue.append(color)
+		print("Added item with color:", color)
+
 		
 
 func generate_goals():
 	for color in queue:
 		var goal = ColorRect.new()
 		goal.color = color
-		goal.size = Vector2(40,40)
+		goal.custom_minimum_size = Vector2(40,40)
+		#goal.size = Vector2(40,40)
 		goal_container.add_child(goal)
+		print("Goal color added:", color)
 
 func dequeue_item(color_clicked: Color):
 	if current_index >= queue.size():
 		return
-	
+	print("Expected color:", queue[current_index], "Clicked color:", color_clicked)
 	if queue[current_index] == color_clicked:
 		status_label.text = "Correct!"
 		current_index +=1
