@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd3pcm1bjswch"]
+
+[ext_resource type="Script" uid="uid://bqhu1retc1kh7" path="res://Scenes/queue_item.gd" id="1_jievf"]
+
+[node name="QueueItem" type="Node2D"]
+script = ExtResource("1_jievf")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
