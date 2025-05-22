@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://03y3uyi3iwby"]
 
-[ext_resource type="Script" uid="uid://bg7km6j2hf0rp" path="res://Scenes/queue_room.gd" id="1_8v2x3"]
+[ext_resource type="Script" uid="uid://bg7km6j2hf0rp" path="res://Scripts/queue_room.gd" id="1_8v2x3"]
 [ext_resource type="PackedScene" uid="uid://bd3pcm1bjswch" path="res://Scenes/QueueItem.tscn" id="2_nuy33"]
 
 [node name="QueueRoom" type="Node2D"]
